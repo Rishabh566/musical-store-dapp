@@ -1,23 +1,16 @@
 
 <a name="br1"></a> 
 
-Blockchain Concepts and Technologies
-
-Creation of a Decentralized, web3-enabled application. (Retail-ECommerce)- Report)
-
-Rishabh Sinha
-
-X21171203@student.ncirl.ie
-
-4/7/23
-
 **Blockchain Concepts and Technologies**
+
+***Creation of a Decentralized, web3-enabled application. (Retail-ECommerce)- Report)***
+
 
 **dApp URL: [https://music-store-dapp.netlify.app/**](https://music-store-dapp.netlify.app/)**
 
 **Presentation URL: [BlockChain-Project-Presentation-20230408_184850-Meeting**](https://studentncirl-my.sharepoint.com/:v:/r/personal/x21171203_student_ncirl_ie/Documents/Recordings/BlockChain-Project-Presentation-20230408_184850-Meeting%20Recording.mp4?csf=1&web=1&e=tr8J3p)[** ](https://studentncirl-my.sharepoint.com/:v:/r/personal/x21171203_student_ncirl_ie/Documents/Recordings/BlockChain-Project-Presentation-20230408_184850-Meeting%20Recording.mp4?csf=1&web=1&e=tr8J3p)[Recording.mp4**](https://studentncirl-my.sharepoint.com/:v:/r/personal/x21171203_student_ncirl_ie/Documents/Recordings/BlockChain-Project-Presentation-20230408_184850-Meeting%20Recording.mp4?csf=1&web=1&e=tr8J3p)**
 
-I. Introduction
+**I. Introduction**
 
 Blockchain is a type of data structure that keeps track of transactions in an open, secure, and decentralized way. It is
 
@@ -37,17 +30,17 @@ The blockchain system confirms that the data is saved in a block, which is then 
 
 Each block's hash is added to the hash of the next block, ensuring a secure link between earlier and more recent
 
-transactions. The blockchain is a safe and fantastic technology because it would take an impossibly large amount of
+transactions. Blockchain is a safe and fantastic technology because it would take an impossibly large amount of
 
 processing power to modify even a single block.
 
-II. Process of Operations
+**II. Process of Operations**
 
-1\. Tools Used:
+**1\. Tools Used:**
 
-Building a dApp involves a number distinct components and tools and can be the subject of a stand-alone article. The
+Building a dApp involves a number of distinct components and tools and can be the subject of a stand-alone article. The
 
-project focuses on JavaScript/NodeJS DApp built on the Ethereum platform. The following are the tools used to
+the project focuses on JavaScript/NodeJS DApp built on the Ethereum platform. The following are the tools used to
 
 create dApp:
 
@@ -65,7 +58,7 @@ It effectively handles state and enables the simple construction of intricate UI
 
 The object-oriented, high-level programming language Solidity is what I used to create Smart Contracts that
 
-run on the Ethereum network. It is possible to deploy Solidity code as bytecode on the blockchain.
+run on the Ethereum network. It is possible to deploy Solidity code as a bytecode on the blockchain.
 
 **Tool:** Hardhat
 
@@ -121,13 +114,7 @@ My dApp was uploaded to the cloud via Netlify, and its URL has been made public.
 
 handle environment variables, continuous integration/continuous deployment (CI/CD) pipelines, and web
 
-application
-
-deployment
-
-with
-
-Netlify.
+application deployment with Netlify.
 
 Overall, I built and deployed my dApp using JavaScript/NodeJS utilizing these tools on the Ethereum network.
 
@@ -147,15 +134,20 @@ through URL.
 
 In the .zip file provided for the code do the following steps:
 
+
+
 a. Extract .zip file.
 
-b. Open the extracted folder and run below command in the root directory.
+b. Open the extracted folder and run the below command in the root directory.
+<img width="322" alt="Screenshot 2023-07-18 at 20 49 27" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/57e9ee57-de45-4f95-9dfa-5075f2238d70">
 
-c. Now go to “frontend” and run the same npm install command. It will install all the project dependencies that
+c. Now go to “frontend” and run the same npm install command. It will install all the project dependencies that are recorded in the package .Json file.
+<img width="411" alt="Screenshot 2023-07-18 at 20 51 32" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/345362b6-872a-438e-99b0-2e5cc2d048d5">
 
-are recorded in package. Json file.
 
 d. Sign Up into INFURA: <https://www.infura.io/>[ ](https://www.infura.io/)and go to Dashboard.
+<img width="858" alt="Screenshot 2023-07-18 at 20 52 41" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/8d95e2fb-fa67-4080-91ec-bd554b61224b">
+
 
 e. Click on “CREATE NEW API KEY” > select “WEB3 API” Network and give the name of the project and then
 
