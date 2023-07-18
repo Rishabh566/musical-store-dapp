@@ -162,109 +162,51 @@ f. Above information along with the Owner MetaMask Private Key is stored as the 
 <img width="764" alt="Screenshot 2023-07-18 at 20 56 31" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/613b936a-1877-4d55-bc9f-a71117e61d2a">
 
 
-g. Compile the “music. Sol” solidity file with hardhat it will deploy the “Smart Contract” and give “Smart Contract
+g. Compile the “music. Sol” solidity file with hardhat it will deploy the “Smart Contract” and give “Smart Contract Address” and “ABI .Json” file, which will be used by the front end and ether.js to interact with the smart contract that is deployed on the Sepolia test network.
 
-Address” and “ABI. Json” file, that will be used by the front end and ether.js to interact with the smart contract
-
-that is deployed on Sepolia test network.
-
-
-
+<img width="867" alt="Screenshot 2023-07-18 at 21 16 05" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/ba3894bb-7fb1-4599-bc40-55dd1d18c401">
+  
 <a name="br4"></a> 
 
-Below screenshot is for the contract deployment using hardhat.
+The below screenshot is for the contract deployment using hardhat.
 
-h. Now, the configuration is done in the frontend here “App.js” so that the connecting users MetaMask Wallet
+<img width="846" alt="Screenshot 2023-07-18 at 21 18 43" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/a684f7f8-1746-4e19-bb70-9db07adfb10d">
 
-starts
 
-interacting
+h. Now, the configuration is done in the frontend here “App.js” so that the connecting users' MetaMask Wallet starts interacting with the underlying Smart Contract as shown below.
 
-with
+<img width="562" alt="Screenshot 2023-07-18 at 21 19 23" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/8a178630-9dfe-4992-a08f-a6a97cde8d61">
 
-the
-
-underlying
-
-Smart
-
-Contract
-
-as
-
-shown
-
-below.
 
 i. Type “npm run build” to build the source code and deploy it on Netlify.
 
-Signup into Netlify account by going to <https://app.netlify.com/>[ ](https://app.netlify.com/)and create a site called “music-store-dApp”
+Signup into Netlify account by going to <https://app.netlify.com/>[ ](https://app.netlify.com/)and create a site called “music-store-dApp” and give the URL link for the same.
 
-and give the URL link for the same.
-
+<img width="649" alt="Screenshot 2023-07-18 at 21 20 33" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/01ca788d-4e05-4ec2-af66-61736df30755">
 
 
 <a name="br5"></a> 
 
-Drop build file.
+Drop the build file.
+
+<img width="650" alt="Screenshot 2023-07-18 at 21 21 24" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/c055247c-a210-4373-af33-379ed1e39c22">
 
 j. Setup your domain and upload your build folder.
+
+<img width="656" alt="Screenshot 2023-07-18 at 21 22 16" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/7a495226-245e-4a86-875d-6587431113e0">
+
 
 WEB3 dApp is live now!!!! [**https://music-store-dapp.netlify.app/**](https://music-store-dapp.netlify.app/)
 
 3\. Architecture:
 
-After launching a fresh React project, the first thing I did was install the Ethers.js library, which allows connection with
-
-the blockchain. The blockchain is made up of many nodes, each of which holds a copy of the blockchain's data. My
-
-dApp required to be able to interface with one of these nodes in order to read or write any of this data these libraries
-
-give access to several modules (with methods and attributes) that can be used to communicate with Sepolia Ethereum
-
-TestNet. For example, "ethers.Wallet" is used to connect to an Ethereum wallet, while "ethers.Contract" is used to
-
-communicate with an Ethereum smart contract.
-
-The MetaMask wallet functions as a login and gateway to a DApp. Users are asked to sign in with an email address and
-
-a password in typical web apps. To enable particular functionality in the decentralized world, DApps must be granted
-
-access to a user's wallet. Metamask, which is available as a Chrome extension or a mobile app, was installed. Now that
-
-I had everything I needed, I was able to speak with the blockchain. The "middleman" — the smart contract — is then
-
-
-
-<a name="br6"></a> 
-
-contacted. To connect to a smart contract, you must have the contract address, ABI, and a provider and/or a signer.
-
-The contract address is the contract's address on the blockchain. The ABI (Application Binary Interface) is a JSON file
-
-that gives a breakdown of each function in the contract, including any input parameters, intended output, and data
-
-types. Contract ABI is established by using HardHat to compile our "music.sol" solidity file. Both may be discovered on
-
-Etherscan, an Ethereum blockchain explorer that lets you inspect smart contracts. A DApp requires providers and
-
-signers. A smart contract can have both read and write capabilities. You will need a provider to read data from a smart
-
-contract. A signer is required to write data (i.e. to perform transactions that affect the status of the data on the
-
-blockchain). Both require a signer with a provider. I utilized Infura Node Provider to establish a provider utilizing
-
-Ethers.js's built-in Infura provider option.
+After launching a fresh React project, the first thing I did was install the Ethers.js library, which allows connection with the blockchain. The blockchain is made up of many nodes, each of which holds a copy of the blockchain's data. My dApp required to be able to interface with one of these nodes in order to read or write any of this data these libraries give access to several modules (with methods and attributes) that can be used to communicate with Sepolia Ethereum TestNet. For example, "ethers.Wallet" is used to connect to an Ethereum wallet, while "ethers.Contract" is used to communicate with an Ethereum smart contract. The MetaMask wallet functions as a login and gateway to a DApp. Users are asked to sign in with an email address and a password in typical web apps. To enable particular functionality in the decentralized world, DApps must be granted access to a user's wallet. Metamask, which is available as a Chrome extension or a mobile app, was installed. Now that I had everything I needed, I was able to speak with the blockchain. The "middleman" — the smart contract — is then contacted. To connect to a smart contract, you must have the contract address, ABI, and a provider and/or a signer. The contract address is the contract's address on the blockchain. The ABI (Application Binary Interface) is a JSON file that gives a breakdown of each function in the contract, including any input parameters, intended output, and data types. Contract ABI is established by using HardHat to compile our "music.sol" solidity file. Both may be discovered on Etherscan, an Ethereum blockchain explorer that lets you inspect smart contracts. A DApp requires providers and signers. A smart contract can have both read and write capabilities. You will need a provider to read data from a smart contract. A signer is required to write data (i.e. to perform transactions that affect the status of the data on the blockchain). Both require a signer with a provider. I utilized Infura Node Provider to establish a provider utilizing Ethers.js's built-in Infura provider option.
 
 “const provider = new ethers.providers.InfuraProvider('rinkeby', INFURA\_PROJECT\_ID);”
 
-In contrast, signers are effectively an abstraction of the user's wallet address. Any writing operation to the blockchain
+In contrast, signers are effectively an abstraction of the user's wallet address. Any writing operation to the blockchain will require you to sign the transaction. (i.e., prove that you are who you are).
 
-will require you to sign the transaction. (i.e., prove that you are who you are).
-
-Finally, I constructed a contract that would be utilized throughout the application, sending in the contract address,
-
-ABI, and signer as parameters.
+Finally, I constructed a contract that would be utilized throughout the application, sending in the contract address, ABI, and signer as parameters.
 
 “const contract = new ethers.Contract(CONTRACT\_ADDRESS, CONTRACT\_ABI, provider or signer);”
 
@@ -272,13 +214,7 @@ With this done, I could call my smart contract function.
 
 “const result = await contract.functionName();”
 
-All the transactions are made, and the records are visible in sepolia etharscan under the contract address and at last
-
-the contract balance is transfered to the owners Metamask Wallet. And at last, the “build” file is updated to the cloud
-
-platform “Netlify”, and I had a URL to access my music-store-dApp. I have used Coinabase API to fetch the exchange
-
-value of few crypto currencies to USD.
+All the transactions are made, and the records are visible in sepolia etharscan under the contract address and at last the contract balance is transfered to the owners Metamask Wallet. And at last, the “build” file is updated to the cloud platform “Netlify”, and I had a URL to access my music-store-dApp. I have used Coinabase API to fetch the exchange value of few crypto currencies to USD.
 
 III. Conclusion
 
@@ -322,103 +258,14 @@ IV. Bibliography/References
 
 V. Use and Purpose of Smart Contracts
 
-Smart contracts are self-executing and automated digital contracts with rules and logic expressed in code. Nick Szabo
+Smart contracts are self-executing and automated digital contracts with rules and logic expressed in code. Nick Szabo proposed them as a digital transaction mechanism in the 1990s. A blockchain, which is a distributed and transparent ledger that records transactions across a network of computers, is where smart contracts are maintained. Because a transaction cannot be changed once it is recorded on the blockchain, the blockchain technology used in smart contracts assures efficiency, security, and transparency. Smart contracts do not require intermediaries like banks, attorneys, or notaries, making them more efficient, secure, and cost-effective. Smart contracts allow contracts to be executed automatically once certain logics are met, eliminating the need for intermediaries. They digitally duplicate the conditions of real-world contracts, allowing transactions between untrustworthy parties to take place without the need for direct contact or dependence on third parties. Smart contracts have several advantages over traditional contracts, including lower transaction risk, lower administration and service costs, and improved business process efficiency. They are expected to provide improved alternatives to the current transaction mechanism in a variety of industries. For e.g. there is a smart contract working between you and soda Machine.
 
-proposed them as a digital transaction mechanism in the 1990s. A blockchain, which is a distributed and transparent
+The creation of tokens, NFTs, and applications with smart contract functionality has completely changed a number of industries, including finance, the arts, gaming, and more. The issue of confirming ownership of digital assets, which was previously vulnerable to tampering and consequently, severe losses, has been solved specifically by NFTs. A digital certificate of ownership that can be bought and sold can be created using NFTs, and a record of who owns what can be recorded on a shared ledger known as the blockchain. Due to this, exclusive ownership and asset security have been improved. In the financial industry, the use of DLT-based tokens has grown in popularity as a means of capital raising, and smart contracts have the ability to do away with middlemen and lower transaction costs. NFTs have made it possible for digital artists to make money from their work and have led to high-profile sales in the art world. In the gaming business, NFTs and smart contracts can streamline payment procedures in the building sector.
 
-ledger that records transactions across a network of computers, is where smart contracts are maintained. Because a
+However, using blockchain-based technologies raises several ethical and social questions. The environmental impact of these technology, which can use large quantities of energy when mining cryptocurrency, is one of the key issues.
 
-transaction cannot be changed once it is recorded on the blockchain, the blockchain technology used in smart
+Questions about enforceable property rights and open governance are also raised by ownership and governance of the digital assets represented by NFTs. Concerns regarding the commercialisation of art and its effects on conventional notions of art ownership and value have been raised by the introduction of NFTs in the art world. Finally, despite their increased security and openness, the use of blockchain-based technology in banking raises questions about the possibility of fraud and other illegal acts.
 
-contracts assures efficiency, security, and transparency. Smart contracts do not require intermediaries like banks,
+In order to maximize the benefits of blockchain-based technology while minimizing any potential negatives, these ethical and societal challenges must be addressed.
 
-attorneys, or notaries, making them more efficient, secure, and cost-effective.
-
-Smart contracts allow contracts to be executed automatically once certain logics are met, eliminating the need for
-
-intermediaries. They digitally duplicate the conditions of real-world contracts, allowing transactions between
-
-untrustworthy parties to take place without the need for direct contact or dependence on third parties. Smart
-
-contracts have several advantages over traditional contracts, including lower transaction risk, lower administration
-
-and service costs, and improved business process efficiency. They are expected to provide improved alternatives to
-
-the current transaction mechanism in a variety of industries. For e.g. there is a smart contract working between you
-
-and soda Machine.
-
-The creation of tokens, NFTs, and applications with smart contract functionality has completely changed a number of
-
-industries, including finance, the arts, gaming, and more. The issue of confirming ownership of digital assets, which
-
-was previously vulnerable to tampering and consequently, severe losses, has been solved specifically by NFTs. A digital
-
-certificate of ownership that can be bought and sold can be created using NFTs, and a record of who owns what can
-
-be recorded on a shared ledger known as the blockchain. Due to this, exclusive ownership and asset security have
-
-been improved. In the financial industry, the use of DLT-based tokens has grown in popularity as a means of capital
-
-raising, and smart contracts have the ability to do away with middlemen and lower transaction costs. NFTs have made
-
-it possible for digital artists to make money from their work and have led to high-profile sales in the art world. In the
-
-gaming business, NFTs and smart contracts can streamline payment procedures in the building sector.
-
-However, using blockchain-based technologies raises several ethical and social questions. The environmental impact
-
-of these technology, which can use large quantities of energy when mining cryptocurrency, is one of the key issues.
-
-Questions about enforceable property rights and open governance are also raised by ownership and governance of
-
-the digital assets represented by NFTs. Concerns regarding the commercialisation of art and its effects on conventional
-
-notions of art ownership and value have been raised by the introduction of NFTs in the art world. Finally, despite their
-
-increased security and openness, the use of blockchain-based technology in banking raises questions about the
-
-possibility of fraud and other illegal acts.
-
-In order to maximize the benefits of blockchain-based technology while minimizing any potential negatives, these
-
-ethical and societal challenges must be addressed.
-
-Many businesses are looking at integrating blockchain technology into their daily operations. For instance, in order to
-
-improve interactions with public transportation, BMW is thinking about incorporating blockchain into its next fleet of
-
-electric automobiles. The potential of blockchain for better monitoring of parts and maintenance procedures is being
-
-investigated by Lufthansa Airways. In contrast, Deutsche Telekom is using smart contracts to discuss roaming rates
-
-with other telecoms firms. For example, 1) The goal of PowerLedger [(](https://www.powerledger.io/)<https://www.powerledger.io/>[ ](https://www.powerledger.io/)), an award-
-
-winning Australian business, is to hasten the shift to a carbon-free economy. The issue is prevalent in apartment
-
-buildings where tenants frequently occupy the flats, according to the company. Apartment owners face a dilemma
-
-since they might not be motivated to put in solar panels or batteries because the tenants are the ones who benefit
-
-from them. The body corporate may now accept tenant payments for their electricity bills thanks to a new solution
-
-from PowerLedger. By doing this, the tenant avoids paying the power company and instead pays the owner directly
-
-for their electricity. Additionally, any extra energy that isn't utilized while the tenant is away might be sold to a
-
-neighbour to lower their energy costs and make money for the property owner. By tokenizing assets and making it
-
-simpler to invest in solar or wind farms, this offers a mechanism that justifies the investment in the first place and
-
-could expedite sustainable energy projects. 2) Another illustration is GAMB, a blockchain-based decentralized
-
-eCommerce platform. The platform is run by the Global Alliance of Merchants on the Blockchain (GAMB), where token
-
-holders who are members of the Merchant Alliance submit rules and regulations. These recommendations are then
-
-written into smart contracts, ensuring sustainability, reliability, and openness. GAMB is designed with merchants in
-
-mind, and the merchants themselves manage its features, functioning, and fee structures through a decentralized
-
-autonomous organization. (DAO).
-
+Many businesses are looking at integrating blockchain technology into their daily operations. For instance, in order to improve interactions with public transportation, BMW is thinking about incorporating blockchain into its next fleet of electric automobiles. The potential of blockchain for better monitoring of parts and maintenance procedures is being investigated by Lufthansa Airways. In contrast, Deutsche Telekom is using smart contracts to discuss roaming rates with other telecoms firms. For example, 1) The goal of PowerLedger [(](https://www.powerledger.io/)<https://www.powerledger.io/>[ ](https://www.powerledger.io/)), an award- winning Australian business, is to hasten the shift to a carbon-free economy. The issue is prevalent in apartment buildings where tenants frequently occupy the flats, according to the company. Apartment owners face a dilemma since they might not be motivated to put in solar panels or batteries because the tenants are the ones who benefit from them. The body corporate may now accept tenant payments for their electricity bills thanks to a new solution from PowerLedger. By doing this, the tenant avoids paying the power company and instead pays the owner directly for their electricity. Additionally, any extra energy that isn't utilized while the tenant is away might be sold to a neighbour to lower their energy costs and make money for the property owner. By tokenizing assets and making it simpler to invest in solar or wind farms, this offers a mechanism that justifies the investment in the first place and could expedite sustainable energy projects. 2) Another illustration is GAMB, a blockchain-based decentralized eCommerce platform. The platform is run by the Global Alliance of Merchants on the Blockchain (GAMB), where token holders who are members of the Merchant Alliance submit rules and regulations. These recommendations are then written into smart contracts, ensuring sustainability, reliability, and openness. GAMB is designed with merchants in mind, and the merchants themselves manage its features, functioning, and fee structures through a decentralized autonomous organization. (DAO).
