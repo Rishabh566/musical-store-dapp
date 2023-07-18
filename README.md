@@ -1,12 +1,9 @@
-Demo application: https://musical-store-dapp.netlify.app
 
 <a name="br1"></a> 
 
-Blockchain Concepts
+Blockchain Concepts and Technologies
 
-and Technologies
-
-Project Report (Creation of a Decentralized, web3 enabled application. (Retail-ECommerce)- Report)
+Creation of a Decentralized, web3-enabled application. (Retail-ECommerce)- Report)
 
 Rishabh Sinha
 
@@ -15,34 +12,6 @@ X21171203@student.ncirl.ie
 4/7/23
 
 **Blockchain Concepts and Technologies**
-
-**Academic Honesty Declaration**
-
-I declare the following to be true for this submission:
-
-•
-
-•
-
-I have completed the task during the designated time window and declare it to be exclusively my own work.
-
-I have not received or attempted to receive assistance in preparing this response from any other person during
-
-the assessment window.
-
-•
-
-•
-
-I have not provided, or offered to provide, assistance to any other student by any means during the assessment
-
-window.
-
-I have read and understand the National College of Ireland guidelines of Plagiarism.
-
-
-
-<a name="br2"></a> 
 
 **dApp URL: [https://music-store-dapp.netlify.app/**](https://music-store-dapp.netlify.app/)**
 
