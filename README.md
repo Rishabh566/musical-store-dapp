@@ -139,23 +139,28 @@ In the .zip file provided for the code do the following steps:
 a. Extract .zip file.
 
 b. Open the extracted folder and run the below command in the root directory.
+
 <img width="322" alt="Screenshot 2023-07-18 at 20 49 27" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/57e9ee57-de45-4f95-9dfa-5075f2238d70">
 
 c. Now go to “frontend” and run the same npm install command. It will install all the project dependencies that are recorded in the package .Json file.
+
 <img width="411" alt="Screenshot 2023-07-18 at 20 51 32" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/345362b6-872a-438e-99b0-2e5cc2d048d5">
 
 
 d. Sign Up into INFURA: <https://www.infura.io/>[ ](https://www.infura.io/)and go to Dashboard.
+
 <img width="858" alt="Screenshot 2023-07-18 at 20 52 41" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/8d95e2fb-fa67-4080-91ec-bd554b61224b">
 
 
-e. Click on “CREATE NEW API KEY” > select “WEB3 API” Network and give the name of the project and then
+e. Click on “CREATE NEW API KEY” > select “WEB3 API” Network and give the name of the project and then take a not of your API KEY and ENDPOINT URL.
 
-take a not of your API KEY and ENDPOINT URL.
+<img width="765" alt="Screenshot 2023-07-18 at 20 54 46" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/02ef4f47-83de-4385-8e05-f9ca8a99eeb0">
 
-f. Above information along with the Owner MetaMask Private Key is stored as the environment variable in
 
-“.env” file.
+f. Above information along with the Owner MetaMask Private Key is stored as the environment variable in “.env” file.
+
+<img width="764" alt="Screenshot 2023-07-18 at 20 56 31" src="https://github.com/Rishabh566/musical-store-dapp/assets/46817303/613b936a-1877-4d55-bc9f-a71117e61d2a">
+
 
 g. Compile the “music. Sol” solidity file with hardhat it will deploy the “Smart Contract” and give “Smart Contract
 
